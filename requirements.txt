@@ -1,0 +1,3 @@
+git+https://github.com/kyutai-labs/moshi.git#egg=moshi&subdirectory=moshi
+gradio
+requests
