@@ -1,3 +1,5 @@
+[View this README in French (ReadmeFR.md)](ReadmeFR.md)
+
 # Hibiki: French-English Speech Translation (CPU)
 
 ## Overview
