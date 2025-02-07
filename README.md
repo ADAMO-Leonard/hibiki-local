@@ -1,4 +1,4 @@
-[View this README in French (ReadmeFR.md)](ReadmeFR.md)
+[![English](https://img.shields.io/badge/README-English-blue.svg)](Readme.md)
 
 # Hibiki: French-English Speech Translation (CPU)
 
