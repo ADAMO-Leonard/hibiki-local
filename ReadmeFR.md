@@ -29,7 +29,7 @@ Hibiki est un projet de traduction *speech-to-speech* (et *speech-to-text*) qui 
 4.  **Télécharger les modèles :**
 
     ```bash
-    python Modèles/download.py
+    python Modeles/download.py
     ```
 
 5.  **Important : Correction pour la compatibilité CPU (Librairie Moshi)**
