@@ -31,7 +31,7 @@ Hibiki is a speech-to-speech (and speech-to-text) translation project that focus
 4.  **Download the Models:**
 
     ```bash
-    python Modèles/download.py
+    python Modeles/download.py
     ```
 
 5.  **Important:  CPU Compatibility Fix (Moshi Library)**
