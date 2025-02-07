@@ -10,7 +10,7 @@ Hibiki est un projet de traduction *speech-to-speech* (et *speech-to-text*) qui 
 
     ```bash
     https://github.com/ADAMO-Leonard/hibiki-local.git
-    cd hibiki
+    cd hibiki-local
     ```
 
 2.  **Créer et activer un environnement Conda :**
