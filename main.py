@@ -7,6 +7,11 @@ import time
 import os
 import glob  # Import glob
 
+import torch
+import torch._dynamo
+torch._dynamo.config.suppress_errors = True
+os.environ["TORCHDYNAMO_DISABLE"] = "1"
+
 # Définition des chemins (absolus)
 BASE_DIR = Path(__file__).parent.resolve()
 MODEL_DIR = BASE_DIR / "Modeles"
@@ -40,7 +45,7 @@ def run_inference(input_audio_path: str, batch_size: int = 2, cfg_coef: float = 
         "--moshi-weight", str(hibiki_weight),
         "--mimi-weight", str(mimi_weight),
         "--cfg-coef", str(cfg_coef),
-        "--device", "cpu",
+        "--device", "cuda" if torch.cuda.is_available() else "cpu",
         "--batch-size", str(batch_size),
     ]
 
@@ -87,10 +92,15 @@ iface = gr.Interface(
         gr.Audio(label="Audio traduit"),
         gr.Textbox(label="Transcription (inclut les logs)", lines=10),
     ],
-    title="Traduction audio avec Hibiki (CPU)",
+    title="Traduction audio avec Hibiki",
     description="Uploadez un fichier audio et cliquez sur 'Traduire'.",
     allow_flagging="never",
 )
 
 if __name__ == "__main__":
+    if torch.cuda.is_available():
+        print("CUDA is true, run with GPU")
+    else:
+        print("CUDA is false, read instruction on github, you need to change quantize.py")
+
     iface.launch()
