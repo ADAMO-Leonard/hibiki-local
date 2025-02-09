@@ -68,6 +68,6 @@ Nous adressons nos sincères remerciements à :
 *   L'**équipe Hibiki** de Kyutai Labs pour le développement de ce projet et sa mise à disposition :
     *   [Dépôt GitHub](https://github.com/kyutai-labs/hibiki)
     *   [Collection Hugging Face](https://huggingface.co/collections/kyutai/hibiki-fr-en-67a48835a3d50ee55d37c2b5)
-*   Les grands modèles de langage (LLM) qui ont aidé à la rédaction de cette documentation.
+  
 
 *    Les grands modèles de langage (LLM) qui ont aidé à la rédaction de cette documentation.
