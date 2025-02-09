@@ -9,7 +9,7 @@ Hibiki est un projet de traduction *speech-to-speech* (et *speech-to-text*) qui 
 1.  **Cloner le dépôt :**
 
     ```bash
-    https://github.com/ADAMO-Leonard/hibiki-local.git
+    git clone https://github.com/ADAMO-Leonard/hibiki-local.git
     cd hibiki-local
     ```
 
