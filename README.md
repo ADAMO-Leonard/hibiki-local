@@ -1,49 +1,55 @@
 [![Français](https://img.shields.io/badge/README-Français-blue.svg)](ReadmeFR.md)
 
-# Hibiki: French-English Speech Translation (CPU)
+# Hibiki: French-English Speech Translation (CPU/GPU)
 
 ## Overview
 
-Hibiki is a speech-to-speech (and speech-to-text) translation project that focuses on translating spoken French to English. This version is configured to run on the CPU.
+Hibiki is a speech-to-speech (and speech-to-text) translation project that focuses on translating spoken French to English. This version is configured to run on both CPU and GPU, with automatic detection of hardware.
 
 ## Installation
 
-1.  **Clone the Repository:**
+1. **Clone the Repository:**
 
     ```bash
     git clone https://github.com/ADAMO-Leonard/hibiki-local.git
     cd hibiki-local
     ```
 
-2.  **Create and Activate a Conda Environment:**
+2. **Create and Activate a Conda Environment:**
 
     ```bash
     conda create -n hibiki_env python=3.10
     conda activate hibiki_env
     ```
 
-3.  **Install Dependencies:**
+3. **Install Dependencies:**
 
     ```bash
     pip install -r requirements.txt
     ```
 
-4.  **Download the Models:**
+4. **Download the Models:**
 
     ```bash
     python Modeles/download.py
     ```
 
-5.  **Important:  CPU Compatibility Fix (Moshi Library)**
+5. **Check for GPU:**
 
-    To make Hibiki work correctly on the CPU, you need to replace the original `quantize.py` file in the `moshi` library with the version provided in the Hibiki GitHub repository.  This is crucial for CPU operation.
+    The system will automatically detect if a GPU is available. If your system has a compatible GPU, the model will run on the GPU without any further modification.
 
-    Locate the file here:
-    `\anaconda3\envs\hibiki_env\lib\site-packages\moshi\utils\quantize.py`
+    **For CPU-only operation:**
+    
+    If the GPU is not available, follow these steps:
+    
+    - Open the `quantize.py` file in the `moshi` library.
+    - This file can be found here:  
+      `\anaconda3\envs\hibiki_env\lib\site-packages\moshi\utils\quantize.py`
+    
+    - Replace the entire content of the file with the version provided in the Hibiki GitHub repository.
+      - You can either copy-paste the code or download the file directly from the Hibiki repository and replace the original.
 
-   Replace its entire content with the `quantize.py` from the Hibiki repository.  You can either copy and paste the code or download the file directly and replace the original. There's not git clone because it's a specific file in the repository.
-
-6.  **Run the Translation:**
+6. **Run the Translation:**
 
     ```bash
     python main.py
@@ -54,7 +60,7 @@ Hibiki is a speech-to-speech (and speech-to-text) translation project that focus
 Here are some potential enhancements:
 
 -   [x]  **Gradio Interface:**  Implement a user-friendly interface using Gradio.
--   [ ]  **GPU Acceleration:**  Enable GPU support for faster processing.
+-   [x]  **GPU Acceleration:**  Enable GPU support for faster processing.
 -   [ ]  **Real-time Translation:**  Add functionality for real-time translation.
 
 ## Acknowledgements
