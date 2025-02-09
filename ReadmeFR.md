@@ -1,4 +1,4 @@
-# Hibiki : Traduction Vocale Français-Anglais (CPU/GPU)
+# Hibiki : Traduction Vocale Français-Anglais (CPU/GPU) Windows
 
 ## Présentation
 
