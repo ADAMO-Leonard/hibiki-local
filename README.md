@@ -11,7 +11,7 @@ Hibiki is a speech-to-speech (and speech-to-text) translation project that focus
 1.  **Clone the Repository:**
 
     ```bash
-    https://github.com/ADAMO-Leonard/hibiki-local.git
+    git clone https://github.com/ADAMO-Leonard/hibiki-local.git
     cd hibiki-local
     ```
 
