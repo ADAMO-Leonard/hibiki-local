@@ -33,8 +33,13 @@ Hibiki is a speech-to-speech (and speech-to-text) translation project that focus
     ```bash
     python Modeles/download.py
     ```
+5. **Run the Translation:**
 
-5. **Check for GPU:**
+    ```bash
+    python main.py
+    ```
+
+6. **Check for GPU:**
 
     The system will automatically detect if a GPU is available. If your system has a compatible GPU, the model will run on the GPU without any further modification.
 
@@ -49,11 +54,7 @@ Hibiki is a speech-to-speech (and speech-to-text) translation project that focus
     - Replace the entire content of the file with the version provided in the Hibiki GitHub repository.
       - You can either copy-paste the code or download the file directly from the Hibiki repository and replace the original.
 
-6. **Run the Translation:**
 
-    ```bash
-    python main.py
-    ```
 
 ## Areas for Improvement
 
