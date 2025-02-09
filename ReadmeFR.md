@@ -51,7 +51,7 @@ Hibiki est un projet de traduction *speech-to-speech* (et *speech-to-text*) qui 
 
 Voici quelques améliorations potentielles :
 
--   [ ]  **Interface Gradio :**  Implémenter une interface utilisateur conviviale avec Gradio.
+-   [X]  **Interface Gradio :**  Implémenter une interface utilisateur conviviale avec Gradio.
 -   [ ]  **Accélération GPU :**  Activer la prise en charge du GPU pour un traitement plus rapide.
 -   [ ]  **Traduction en temps réel :**  Ajouter une fonctionnalité de traduction en temps réel.
 
