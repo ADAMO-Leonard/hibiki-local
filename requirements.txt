@@ -1,3 +1,10 @@
 git+https://github.com/kyutai-labs/moshi.git#egg=moshi&subdirectory=moshi
 gradio
 requests
+bitsandbytes
+
+
+# Utilisation de l'index pour CUDA 12.1
+--extra-index-url https://download.pytorch.org/whl/cu121
+torch==2.5.1+cu121
+torchaudio==2.5.1+cu121
