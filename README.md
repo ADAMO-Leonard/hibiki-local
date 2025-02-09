@@ -1,6 +1,6 @@
 [![Français](https://img.shields.io/badge/README-Français-blue.svg)](ReadmeFR.md)
 
-# Hibiki: French-English Speech Translation (CPU/GPU)
+# Hibiki: French-English Speech Translation (CPU/GPU) Windows
 
 ## Overview
 
